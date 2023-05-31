@@ -1,0 +1,70 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-color: #ffd000;
+    margin: auto;
+}
+/* header */
+header {
+    padding: 20px;
+    margin: 0px;
+    border-bottom: 10px double beige;
+    background-color: #ff9100;
+}
+/* Lerantino */
+header nav h1 {
+    font-size: 40px;
+    padding: 5px 5px;
+    color: beige;
+}
+/* nav */
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    /* need to figure out how to push the li to the right of the page */
+}
+/* Cool Subtitle text with b/g img */
+main h3{
+    background-image: ;
+    display: inline;
+    float: right;
+    padding: 30 ;
+}
+/* About Me section */
+main section h1{
+    font-size: 30px;
+    color: beige;
+    padding-left: 10px;
+    margin: 10px;
+}
+/* About Me p */
+main section h1 p {
+    font-size: 16px;
+
+}
+/* Work h1 */
+main section h1 h1 {
+    font-size: 30px;
+    color: beige;
+    padding-left: 10px;
+    margin: 10px;
+}
+/* Work sections with b/g imgs*/
+main section h1 h1 p {
+    
+} 
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    padding: 20px 0px;
+    border-top: 10px beige;
+    background-color: #ff9100;
+}
