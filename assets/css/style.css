@@ -5,19 +5,15 @@ body {
     background-color: #ffd000;
     margin: auto;
 }
-
-a:link {
-    color: beige;
-}
 /* header, footer */
-header, footer {
+.header, footer {
     padding: 20px;
     margin: 0px;
     border-bottom: 10px double #8338ec;
     background-color: #fb5607;
 }
 /* h1*/
-header h1{
+.header h1{
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -26,18 +22,19 @@ header h1{
     padding: 5px 5px;
     color: beige;
     text-decoration: underline #8338ec;
-    border-radius: 15px;
 }
 /* header avatar */
-header img {
+.header img {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0px;
     width: 271px;
     height: 390px;
+    /* want overflow-clip-margin: 0; */
 }
 /* nav */
-header nav {
+.header nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +44,7 @@ header nav {
 }
 /* need to figure out how to push the li to the right of the page */
 /* nav li */
-header nav ul {
+.header nav ul {
     font-size: 25px;
     display: flex;
     flex-direction: row;
@@ -95,24 +92,28 @@ main section .intro {
 }
 .dice {
     display: grid;
-    grid-template-areas: "top" "middle" "left" "right" "bottom";
+    grid-template-areas: 
+    "top left top middle top right" 
+    "middle left middle middle middle right"
+    "bottom left middle bottom bottom right";
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    padding: 50px;
+    padding: 30px;
     height: 200px;
 }
 /* atttempting to create "dice"-shaped grid-area */
-.project1 {
-    grid-area: top left;
-    background-image: url('https://placehold.co/400x200');
+.dice .project1 {
+    grid-area: top right;
+    background-image: url('https://placehold.co/600x200');
+    width: 600px;
 }
 .project2 {
-    grid-area: top right;
+    grid-area: middle middle;
     background-image: url('https://placehold.co/400x200');
 }
 .project3 {
-    grid-area: middle;
+    grid-area: top left;
     background-image: url('https://placehold.co/400x200');
 }
 .project4 {
@@ -129,10 +130,11 @@ main section .intro {
     height: 100px;
     border: 10px double #8338ec;
     border-radius: 15px;
-}
+} */
+
 /* Work sections p, spans*/
 .project {
-    display: flex;
+    display: grid;
     justify-content: space-evenly;
     align-items: center;
     height: 200px;
