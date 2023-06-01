@@ -12,14 +12,24 @@ body {
     border-bottom: 10px double #8338ec;
     background-color: #fb5607;
 }
+/* header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* h1*/
-.header h1{
+.header .name{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('https://github.com/Zero-0X/Challenge_2_Custom_Responsive_Website/blob/main/assets/xy_by_matjosh_d49ki07.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: stretch;
     height: 50px;
     font-size: 50px;
-    padding: 5px 5px;
+    padding: 250px 11px;
     color: beige;
     text-decoration: underline #8338ec;
 }
@@ -52,6 +62,10 @@ body {
     align-items: center;
     list-style-type: none;
     color: #3a86ff;    
+}
+
+.header nav ul li:not(:last-child) {
+    margin-right: 10px;
 }
 
 main {
@@ -93,38 +107,34 @@ main section .intro {
 .dice {
     display: grid;
     grid-template-areas: 
-    "top left top middle top right" 
-    "middle left middle middle middle right"
-    "bottom left middle bottom bottom right";
+    "top-left top-middle top-right" 
+    "middle-left middle-middle middle-right"
+    "bottom-left middle-bottom bottom-right";
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     padding: 30px;
-    height: 200px;
 }
 /* atttempting to create "dice"-shaped grid-area */
 .dice .project1 {
-    grid-area: top right;
-    background-image: url('https://placehold.co/600x200');
-}
-.dice .project1 a {
-    border-radius: 15px;
+    grid-area: middle-middle;
+    background-image: url('https://placehold.co/800x800');
 }
 .project2 {
-    grid-area: middle middle;
-    background-image: url('https://placehold.co/400x200');
+    grid-area: top-right;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('https://placehold.co/400x400');
 }
 .project3 {
-    grid-area: top left;
-    background-image: url('https://placehold.co/400x200');
+    grid-area: top-left;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('https://placehold.co/400x400');
 }
 .project4 {
-    grid-area: bottom left;
-    background-image: url('https://placehold.co/400x200');
+    grid-area: bottom-left;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('https://placehold.co/400x400');
 }
 .project5 {
-    grid-area: bottom right;
-    background-image: url('https://placehold.co/400x200');
+    grid-area: bottom-right;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('https://placehold.co/400x400');
 }
 /* Work sections boxes, borders, links, b/g imgs */
 /* .project {
@@ -139,11 +149,13 @@ main section .intro {
     display: grid;
     justify-content: space-evenly;
     align-items: center;
-    height: 200px;
-    width: 400px;
     color: #ff006e;
     border-radius: 15px;
     background-color: #8338ec;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 30px;
 }
 /* footer */
 footer {
