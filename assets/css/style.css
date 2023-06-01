@@ -13,7 +13,7 @@ a:link {
 header, footer {
     padding: 20px;
     margin: 0px;
-    border-bottom: 10px double beige;
+    border-bottom: 10px double #8338ec;
     background-color: #fb5607;
 }
 /* nav */
@@ -34,6 +34,8 @@ header nav h1 {
     font-size: 50px;
     padding: 5px 5px;
     color: beige;
+    text-decoration: underline #8338ec;
+    border-radius: 15px;
 }
 /* need to figure out how to push the li to the right of the page */
 /* nav li */
@@ -47,6 +49,10 @@ header nav ul {
     color: #3a86ff;    
 }
 
+main {
+    flex: 1;
+    margin-bottom: 350px;
+}
 /* quote with b/g img */
 main section h3 {
     background-image: url('https://placehold.co/2560x200');
@@ -72,17 +78,43 @@ main section h1 {
     font-size: 30px;
     color: beige;
 }
+main section .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #8338ec;
+}
 .dice {
     display: grid;
-    grid-template-areas: top middle left right bottom;
+    grid-template-areas: "top" "middle" "left" "right" "bottom";
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     padding: 50px;
-    
     height: 200px;
-    
-}     
+}
+/* atttempting to create "dice"-shaped grid-area */
+.project1 {
+    grid-area: top left;
+    background-image: url('https://placehold.co/400x200');
+}
+.project2 {
+    grid-area: top right;
+    background-image: url('https://placehold.co/400x200');
+}
+.project3 {
+    grid-area: middle;
+    background-image: url('https://placehold.co/400x200');
+}
+.project4 {
+    grid-area: bottom left;
+    background-image: url('https://placehold.co/400x200');
+}
+.project5 {
+    grid-area: bottom right;
+    background-image: url('https://placehold.co/400x200');
+}
 /* Work sections boxes, borders, links, b/g imgs */
 /* .project {
     display: flex;
@@ -90,7 +122,7 @@ main section h1 {
     border: 10px double #8338ec;
     border-radius: 15px;
 }
-/* Work sections spans*/
+/* Work sections p, spans*/
 .project {
     display: flex;
     justify-content: space-evenly;
@@ -98,14 +130,14 @@ main section h1 {
     height: 200px;
     width: 400px;
     color: #ff006e;
-    border: 10px double #8338ec;
     border-radius: 15px;
-
+    background-color: #8338ec;
 }
 /* footer */
 footer {
-    border-top: 10px double beige;
+    border-top: 10px double #8338ec;
     border-bottom: none;
+    text-decoration: underline #8338ec;
 }
 
 footer h1 {
