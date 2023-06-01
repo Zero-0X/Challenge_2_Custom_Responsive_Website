@@ -60,7 +60,7 @@ main {
 }
 /* quote with b/g img */
 main section h3 {
-    background-image: url('https://placehold.co/2560x200');
+    background-image: url('https://github.com/Zero-0X/Challenge_2_Custom_Responsive_Website/blob/main/assets/pexels-lennard-schubert-11814657.jpg?raw=true/2560x200');
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -106,7 +106,9 @@ main section .intro {
 .dice .project1 {
     grid-area: top right;
     background-image: url('https://placehold.co/600x200');
-    width: 600px;
+}
+.dice .project1 a {
+    border-radius: 15px;
 }
 .project2 {
     grid-area: middle middle;
